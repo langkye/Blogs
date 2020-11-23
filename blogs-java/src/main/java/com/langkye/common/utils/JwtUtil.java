@@ -1,4 +1,4 @@
-package com.langkye.common.lang.utils;
+package com.langkye.common.utils;
 
 import io.jsonwebtoken.Claims;
 import io.jsonwebtoken.Jwts;

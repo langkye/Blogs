@@ -1,4 +1,4 @@
-package com.langkye.common.lang.utils;
+package com.langkye.common.utils;
 
 import com.langkye.shiro.AccountProfile;
 import org.apache.shiro.SecurityUtils;

@@ -1,2 +1,21 @@
-package com.langkye.shiro;public class AccountProfile {
+package com.langkye.shiro;
+
+import lombok.Data;
+
+import java.io.Serializable;
+
+/**
+ * @author langkye
+ */
+@Data
+public class AccountProfile implements Serializable {
+
+    private Long id;
+
+    private String username;
+
+    private String avatar;
+
+    private String email;
+
 }

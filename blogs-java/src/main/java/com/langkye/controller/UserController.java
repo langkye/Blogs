@@ -1,12 +1,11 @@
 package com.langkye.controller;
 
 
+import com.langkye.entity.User;
 import com.langkye.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.validation.annotation.Validated;
+import org.springframework.web.bind.annotation.*;
 
 /**
  * <p>
@@ -26,4 +25,15 @@ public class UserController {
     public Object test(){
         return userService.getById(1l);
     }
+
+    /**
+     * 测试实体校验
+     * @param user User
+     * @return User
+     */
+    @PostMapping("/save")
+    public Object testUser(@Validated @RequestBody User user) {
+        return user.toString();
+    }
+
 }
