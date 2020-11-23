@@ -10,6 +10,11 @@ import axios from 'axios'
 import VueAxios from 'vue-axios'
 import './axios'
 
+import mavonEditor from 'mavon-editor'
+import 'mavon-editor/dist/css/index.css'
+
+Vue.use(mavonEditor)
+
 Vue.use(VueAxios, axios)
 Vue.prototype.$axios = axios
 
