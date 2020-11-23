@@ -13,6 +13,9 @@ import './axios'
 import mavonEditor from 'mavon-editor'
 import 'mavon-editor/dist/css/index.css'
 
+// 路由拦截
+import './permission.js'
+
 Vue.use(mavonEditor)
 
 Vue.use(VueAxios, axios)
