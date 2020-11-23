@@ -1,7 +1,7 @@
 package com.langkye.shiro;
 
 import cn.hutool.core.bean.BeanUtil;
-import com.langkye.common.utils.JwtUtil;
+import com.langkye.common.utils.JwtUtils;
 import com.langkye.entity.User;
 import com.langkye.service.UserService;
 import lombok.extern.slf4j.Slf4j;
@@ -19,7 +19,7 @@ import org.springframework.stereotype.Component;
 @Component
 public class AccountRealm extends AuthorizingRealm {
     @Autowired
-    JwtUtil jwtUtil;
+    JwtUtils jwtUtil;
 
     @Autowired
     UserService userService;

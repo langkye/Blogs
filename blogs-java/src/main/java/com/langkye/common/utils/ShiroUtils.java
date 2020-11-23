@@ -6,7 +6,7 @@ import org.apache.shiro.SecurityUtils;
 /**
  * @author langkye
  */
-public class ShiroUtil {
+public class ShiroUtils {
 
     public static AccountProfile getProfile() {
         return (AccountProfile) SecurityUtils.getSubject().getPrincipal();

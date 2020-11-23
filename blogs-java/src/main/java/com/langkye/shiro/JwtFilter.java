@@ -2,7 +2,7 @@ package com.langkye.shiro;
 
 import cn.hutool.json.JSONUtil;
 import com.langkye.common.lang.Result;
-import com.langkye.common.utils.JwtUtil;
+import com.langkye.common.utils.JwtUtils;
 import io.jsonwebtoken.Claims;
 import org.apache.shiro.authc.AuthenticationException;
 import org.apache.shiro.authc.AuthenticationToken;
@@ -24,7 +24,7 @@ import java.io.IOException;
 public class JwtFilter extends AuthenticatingFilter {
 
     @Autowired
-    JwtUtil JwtUtil;
+    JwtUtils JwtUtil;
 
     @Override
     protected AuthenticationToken createToken(ServletRequest servletRequest, ServletResponse servletResponse) throws Exception {

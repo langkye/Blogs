@@ -4,7 +4,7 @@ server:
 # DataSource Config
 spring:
   profiles:
-    active: test
+    active: dev
 #  messages:
 #    basename: i18n/message
   datasource:
@@ -20,7 +20,7 @@ shiro-redis:
   enabled: true
   redis-manager:
     host: 127.0.0.1:6379
-markerhub:
+langkye:
   jwt:
     # 加密秘钥
     secret: f4e2e52034348f86b67cde581c0f9eb5

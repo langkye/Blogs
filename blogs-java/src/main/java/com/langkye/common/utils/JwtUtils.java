@@ -18,7 +18,7 @@ import java.util.Date;
 @Data
 @Component
 @ConfigurationProperties(prefix = "langkye.jwt")
-public class JwtUtil {
+public class JwtUtils {
 
     private String secret;
     private long expire;
