@@ -5,8 +5,8 @@
       <h2>{{blog.title}}</h2>
       <div>{{blog.description}}
       </div>
-      <el-link icon="el-icon-edit">
-        <router-link :to="{name: 'BlogEdit', params: {id: blog.id}}">编辑</router-link>
+      <el-link icon="el-icon-edit" v-if="own">
+        <router-link :to="{name: 'BlogEdit', params: {id: blog.id}}" >编辑</router-link>
       </el-link>
       <el-divider></el-divider>
       <div v-html="blog.content" class="markdown-body content"></div>
@@ -30,7 +30,8 @@ export default {
         title: '',
         description: '',
         content: ''
-      }
+      },
+      own: false
     }
   },
   created() {
@@ -45,6 +46,7 @@ export default {
         var MarkdownIt = require('markdown-it')
         var md = new MarkdownIt()
         _this.blog.content = md.render(blog.content)
+        _this.own = blog.id === blog.userId
       }
     })
   }
