@@ -1,3 +1,5 @@
+> a simple project for springboot 
+
 # Blogs-Java
 
 # Blogs-Vue
